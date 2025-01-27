@@ -49,7 +49,7 @@
     </nav>
     <section id="sobre" class="container text-center py-5 animate__animated animate__fadeIn">
         <div class="row-12">
-            <img src="https://github.com/smithgg415.png" alt="Minha Foto" class="rounded-circle mb-3" width="180">
+            <img src="img/smith.png" alt="Minha Foto" class="rounded-circle mb-3" width="180">
         </div>
         <div class="row-12">
             <p id="typing-text" class="typed-text-container"></p>
@@ -77,7 +77,7 @@
                 <h5 class="title">Nutriflow</h5>
                 <p class="alert">Clique no card para mais:</p>
                 <div class="card project-card">
-                    <img src="projects/nutriflow_project.png" alt="NutriFlow">
+                    <img src="img/nutriflow_project.png" alt="NutriFlow">
                     <div class="overlay">
                         <h5>Nutriflow</h5>
                         <p class="text-center">E-Commerce funcional para loja de suplementos, desenvolvido apenas com
@@ -91,7 +91,7 @@
                 <h5 class="title">InfoNews</h5>
                 <p class="alert">Clique no card para mais:</p>
                 <div class="card project-card">
-                    <img src="projects/infonews_project.png" alt="InfoNews">
+                    <img src="img/infonews_project.png" alt="InfoNews">
                     <div class="overlay">
                         <h5>InfoNews</h5>
                         <p class="text-center">Site de notícias com sistema de Administradores, desenvolvido com PHP e
@@ -107,15 +107,16 @@
         <h2 class="fw-bold text-center highlight">Projeto BeachDuo</h2>
         <div class="row align-items-center mt-4">
             <div class="col-md-6">
-                <div class="mockup-section">
-                    <img src="mockup.png" alt="Mockup do BeachDuo" class="mockup">
+                <div class="mockup-section text-center">
+                    <img id="mockupImage" src="img/mockup.png" alt="Mockup do BeachDuo" class="mockup fade show">
                 </div>
             </div>
             <div class="col-md-6">
-                <p class="fs-4 animate__animated animate__fadeInUp" id="text">BeachDuo é um aplicativo
-                    inovador para
-                    Arenas e Quadras de beach tennis. O objetivo principal do aplicativo é a Arena ter o controle total
-                    de Torneios, Jogadores e os Jogos, algumas funções principais são:</p>
+                <p class="fs-4 animate__animated animate__fadeInUp" id="text">
+                    BeachDuo é um aplicativo inovador para Arenas e Quadras de beach tennis. O objetivo principal do
+                    aplicativo é a Arena ter o controle total de Torneios, Jogadores e os Jogos, algumas funções
+                    principais são:
+                </p>
                 <ul class="fs-4">
                     <li class="animate__animated animate__fadeInUp">Cadastro de torneios e jogadores</li>
                     <li class="animate__animated animate__fadeInUp">Controle total para edição e exclusão</li>
@@ -123,13 +124,15 @@
                     <li class="animate__animated animate__fadeInUp">Notificações e atualizações em tempo real</li>
                 </ul>
                 <p class="fs-4 text-primary animate__animated animate__fadeInUp" id="text">
-                    Desenvolvido em React Native com SQLite, o aplicativo venceu a votação como Melhor App Mobile ETEC 2024
+                    Desenvolvido em React Native com SQLite, o aplicativo venceu a votação como Melhor App Mobile ETEC
+                    2024
                     pela sua inovação e qualidade.
                     <i class="fas fa-award" style="color:#ffd700"></i>
                 </p>
             </div>
         </div>
     </section>
+
     <section id="giacomellidevs" class="container py-5 animate__animated" data-aos="fade-up">
         <h2 class="fw-bold text-center text-light">Giacomelli Dev's</h2>
         <div class="row align-items-center mt-4">
@@ -145,7 +148,8 @@
                     <li>Consultoria de T.I</li>
                 </ul>
                 <p class="giacomellidevs text" id="text">
-                    Entre em contato conosco e solicite um orçamento sem compromisso, estamos prontos para atendê-lo e
+                    Entre em contato conosco e solicite um orçamento sem compromisso, estamos prontos para atendê-lo
+                    e
                     ajudar a impulsionar o seu negócio..
                 </p>
             </div>
@@ -196,6 +200,18 @@
             duration: 1200,
             once: true,
         });
+        const images = ["img/mockup.png", "img/mockup(1).png"];
+        let index = 0;
+        const mockupImage = document.getElementById("mockupImage");
+
+        setInterval(() => {
+            mockupImage.classList.remove("show");
+            setTimeout(() => {
+                index = (index + 1) % images.length;
+                mockupImage.src = images[index];
+                mockupImage.classList.add("show");
+            }, 500);
+        }, 2000);
     </script>
 
 </body>
