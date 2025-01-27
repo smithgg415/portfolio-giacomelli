@@ -107,17 +107,16 @@
         <h2 class="fw-bold text-center highlight">Projeto BeachDuo</h2>
         <div class="row align-items-center mt-4">
             <div class="col-md-6">
-                <div class="mockup-section text-center">
-                    <img id="mockupImage" src="img/mockup.png" alt="Mockup do BeachDuo" class="mockup fade show">
+                <div class="mockup-section">
+                    <img src="img/mockup(1).png" alt="Mockup do BeachDuo" class="mockup">
                 </div>
             </div>
             <div class="col-md-6">
-                <p class="fs-4 animate__animated animate__fadeInUp" id="text">
-                    BeachDuo é um aplicativo inovador para Arenas e Quadras de beach tennis. O objetivo principal do
-                    aplicativo é a Arena ter o controle total de Torneios, Jogadores e os Jogos, algumas funções
-                    principais são:
-                </p>
-                <ul class="fs-4">
+                <p class="fs-4 animate__animated animate__fadeInUp" id="text">BeachDuo é um aplicativo
+                    inovador para
+                    Arenas e Quadras de beach tennis. O objetivo principal do aplicativo é a Arena ter o controle total
+                    de Torneios, Jogadores e os Jogos, algumas funções principais são:</p>
+                <ul class="fs-6">
                     <li class="animate__animated animate__fadeInUp">Cadastro de torneios e jogadores</li>
                     <li class="animate__animated animate__fadeInUp">Controle total para edição e exclusão</li>
                     <li class="animate__animated animate__fadeInUp">Sorteio dos jogos em horário real</li>
@@ -147,13 +146,12 @@
                     <li>Consultoria de T.I</li>
                 </ul>
                 <p class="giacomellidevs text" id="text">
-                    Entre em contato conosco e solicite um orçamento sem compromisso, estamos prontos para atendê-lo
-                    e
+                    Entre em contato conosco e solicite um orçamento sem compromisso, estamos prontos para atendê-lo e
                     ajudar a impulsionar o seu negócio..
                 </p>
             </div>
             <div class="col-md-4">
-                <img src="img/giacomellidevs.png" alt="Giacomelli Dev's" class="img-fluid" id="logoGDevs"
+                <img src="giacomellidevs.png" alt="Giacomelli Dev's" class="img-fluid" id="logoGDevs"
                     data-aos="zoom-in">
             </div>
         </div>
@@ -199,18 +197,6 @@
             duration: 1200,
             once: true,
         });
-        const images = ["img/mockup.png", "img/mockup(1).png"];
-        let index = 0;
-        const mockupImage = document.getElementById("mockupImage");
-
-        setInterval(() => {
-            mockupImage.classList.remove("show");
-            setTimeout(() => {
-                index = (index + 1) % images.length;
-                mockupImage.src = images[index];
-                mockupImage.classList.add("show");
-            }, 500);
-        }, 4000);
     </script>
 
 </body>
