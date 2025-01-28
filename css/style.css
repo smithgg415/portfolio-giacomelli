@@ -25,7 +25,7 @@ body {
 
 
 #tecnologias i {
-    font-size: 1.7rem;
+    font-size: 3rem;
     color: #ff4500;
     transition: transform 0.3s ease;
 }
@@ -33,6 +33,12 @@ body {
 #tecnologias i:hover {
     transform: scale(1.3) rotate(360deg);
     animation: 0.5s infinite;
+}
+
+@media (max-width: 768px) {
+    #tecnologias i {
+        font-size: 1.7rem;
+    }
 }
 
 .project-card {
@@ -74,6 +80,12 @@ body {
     opacity: 1;
 }
 
+.project-card .overlay p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 .project-card .overlay a {
     color: #ff4500;
     text-decoration: none;
@@ -94,7 +106,8 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(to right, #ff4500, #fff);
+    font-size: 2.4rem;
+    background: linear-gradient(to right, #ff4500, #ff4500, #fff, #fff);
     background-clip: text;
     color: transparent;
 }
@@ -143,18 +156,31 @@ body {
 .navbar-brand {
     color: #ff4500 !important;
     font-weight: bold;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
     font-size: 30px;
+    transition: 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #fff !important;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 5px;
 }
 
 .nav-link {
     color: #ff4500 !important;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
 }
 
 .nav-link:hover {
     color: #fff !important;
     text-shadow: 0 0 5px #ff4500;
+    border-bottom: 2px solid #ff4500;
 }
+
 
 .navbar-toggler {
     border-color: #fff;
@@ -376,4 +402,61 @@ footer .footer-social-icons a:hover {
         margin-top: 1.5rem;
         max-width: 90%;
     }
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+#sharkwave {
+    width: auto;
+    filter: drop-shadow(0px 10px 20px rgba(54, 105, 247, 0.8));
+    height: auto;
+    animation: trocar_cor_de_fundo 4.2s infinite;
+}
+
+@keyframes trocar_cor_de_fundo {
+    0% {
+        filter: drop-shadow(0px 10px 20px rgba(54, 105, 247, 0.8));
+
+    }
+
+    25% {
+        filter: drop-shadow(0px 10px 20px rgba(63, 214, 63, 0.8));
+    }
+
+    50% {
+        filter: drop-shadow(0px 10px 20px rgba(54, 105, 247, 0.8));
+    }
+
+    75% {
+        filter: drop-shadow(0px 10px 20px rgba(63, 214, 63, 0.8));
+    }
+
+    100% {
+        filter: drop-shadow(0px 10px 20px rgba(54, 105, 247, 0.8));
+    }
+}
+
+@media (max-width: 768px) {
+    #sharkwave {
+        height: auto;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+    .lista-certificacoes li{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}
+
+.lista-certificacoes {
+    list-style-type: disc;
+    padding-left: 20px;
 }
