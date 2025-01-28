@@ -37,7 +37,7 @@ body {
 
 @media (max-width: 768px) {
     #tecnologias i {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -81,9 +81,15 @@ body {
 }
 
 .project-card .overlay p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .project-card .overlay p {
+        font-size: 0.8rem;
+    }
 }
 
 .project-card .overlay a {
@@ -449,9 +455,5 @@ footer .footer-social-icons a:hover {
         width: 350px;
         justify-content: center;
         align-items: center;
-    }
-    .lista-certificacoes li{
-        font-size: 1.2rem;
-        text-align: left;
     }
 }
