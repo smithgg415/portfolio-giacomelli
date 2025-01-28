@@ -252,20 +252,7 @@
         AOS.init({
             duration: 1100,
             once: true,
-        }); function abrirPopUp() {
-            document.getElementById("modal").classList.add("show");
-        }
-
-        function fecharPopUp() {
-            document.getElementById("modal").classList.remove("show");
-        }
-
-        window.onclick = function (event) {
-            let modal = document.getElementById("modal");
-            if (event.target === modal) {
-                fecharPopUp();
-            }
-        };
+        });
 
     </script>
 
