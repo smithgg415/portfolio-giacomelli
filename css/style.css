@@ -507,5 +507,23 @@ footer .footer-social-icons a:hover {
         text-align: center;
     }
 }
+#mockup_camisa, #mockup_camisa_crab, #mockup_camisa_turtle{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.8));
+    transition: 0.4s linear; 
+}
+#mockup_camisa:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 10px 20px rgba(30, 255, 0, 0.8));
+}
+#mockup_camisa_crab:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 10px 20px rgba(38, 41, 233, 0.8));
+}
+#mockup_camisa_turtle:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0px 10px 20px rgba(255, 0, 0, 0.8));
+}
 
 
