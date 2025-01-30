@@ -17,14 +17,14 @@
         type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style"
         type="text/css">
-    <link rel="website icon" href="img/giacomellidevs.png" type="png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="website icon" href="img/icon_blackgd.png" type="png">
+    <link id="theme-link" rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="animate__animated animate__fadeIn">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Giacomelli Devs</a>
+            <a class="navbar-brand" href="https://giacomellidevs.netlify.app/">Giacomelli Devs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"></span>
@@ -55,6 +55,8 @@
             </div>
         </div>
     </nav>
+
+
     <section id="sobre" class="container text-center py-5 animate__animated animate__fadeIn">
         <div class="row-12">
             <img src="img/smith.png" alt="Minha Foto" class="rounded-circle mb-3" width="180">
@@ -65,6 +67,28 @@
         <p>Role para baixo <i class="fas fa-arrow-down"></i>
         </p>
     </section>
+    <section id="sobre" class="container text-center py-5 animate__animated animate__fadeIn">
+        <h2 class="fw-bold highlight">Sobre Mim</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-12">
+                <p id="about-me">
+                    E aí! Sou Luís Felipe Giacomelli Rodrigues, desenvolvedor FullStack, atuando tanto no Back quanto no
+                    Front-End. Estou na programação desde 2023 e venho criando sistemas e soluções inovadoras com PHP,
+                    JavaScript, React
+                    Native e MySQL.
+                </p>
+                <p id="about-me">
+                    Também curto web design e design gráfico, sempre buscando unir funcionalidade e estética. Além
+                    disso, presto serviços em uma Empresa Familiar configurando Câmeras de Segurança, estou no meu
+                    último ano do curso Técnico em Informática para Internet integrado ao Ensino Médio.
+                </p>
+                <p id="about-me">
+                    Meu objetivo? Criar projetos que unem tecnologia e criatividade para fazer a diferença!
+                </p>
+            </div>
+        </div>
+    </section>
+
 
     <section id="tecnologias" class="container text-center py-5 animate__animated animate__fadeIn">
         <h2 class="fw-bold highlight">Tecnologias</h2>
@@ -79,7 +103,6 @@
             <i class="fab fa-github"></i>
         </div>
     </section>
-
     <section id="projetos" class="container py-5 animate__animated animate__fadeIn">
         <h2 class="fw-bold text-center highlight">Meus Últimos Projetos</h2>
         <div class="row justify-content-center mt-4">
@@ -94,7 +117,8 @@
                             desenvolvido exclusivamente com tecnologias Front-End, garantindo uma experiência interativa
                             e intuitiva para os usuários.
                         </p>
-                        <a href="https://github.com/smithgg415/nutriflow/" target="_blank">Ver no GitHub</a>
+                        <a href="https://github.com/smithgg415/nutriflow/" target="_blank">Ver no GitHub <i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +132,8 @@
                         <p class="text-center">Site de notícias com um sistema de administração robusto, desenvolvido
                             com PHP e MySQL no Back-End, e um Front-End responsivo em HTML, CSS, JavaScript e Bootstrap.
                         </p>
-                        <a href="https://github.com/smithgg415/site-noticias" target="_blank">Ver no GitHub</a>
+                        <a href="https://github.com/smithgg415/site-noticias" target="_blank">Ver no GitHub <i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -127,7 +152,7 @@
                     <img src="img/mockup(1).png" class="mockup" alt="BeachDuo">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <p class="fs-4 animate__animated animate__fadeInUp" id="text">BeachDuo é um aplicativo que desenvolvi
                     para
                     Arenas e Quadras de beach tennis. O objetivo principal do aplicativo é a Arena ter o controle
@@ -149,22 +174,30 @@
         </div>
     </section>
     <section id="design" class="container py-5 animate__animated animate__fadeIn">
-        <h2 class="fw-bold text-center highlight">Web Design</h2>
+        <h2 class="fw-bold text-center highlight">Design Gráfico e Web Design</h2>
         <div class="row align-items-center mt-4">
-            <div class="col-md-6">
+            <div class="col-md-4" data-aos="zoom-in">
                 <p class="fs-4 animate__animated animate__fadeInUp" id="text">
-                    O design é essencial para a identidade visual de uma marca, transmitindo profissionalismo e impacto.
-                    Busco sempre criar visuais marcantes e funcionais, garantindo que cada detalhe fortaleça a marca e
-                    melhore a experiência do usuário.
+                    O design é essencial para a identidade visual de uma marca, transmitindo profissionalismo e
+                    impacto. Busco sempre criar visuais marcantes e funcionais, garantindo que cada detalhe fortaleça a
+                    marca e melhore a experiência do usuário, seja navegando no site ou vendo as postagens da sua marca.
                 </p>
-
             </div>
-            <div class="col-md-3">
-                <img src="img/sharkwave.png" alt="Design" class="fs-4 animate__animated animate__fadeInUp"
-                    id="sharkwave" data-aos="zoom-in">
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="img/sharkwave.png" alt="Design InfoNews" class="img-fluid animate__animated animate__fadeInUp"
+                    id="sharkwave" data-aos="zoom-in" loading="lazy">
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="img/crabsmash.png" alt="Design Crabsmash"
+                    class="img-fluid animate__animated animate__fadeInUp" id="crabsmash" data-aos="zoom-in"
+                    loading="lazy">
             </div>
         </div>
+        <div class="row text-center">
+            <p class="fs-4">Destaque sua empresa no mundo digital com o nosso trabalho!</p>
+        </div>
     </section>
+
     <section id="certificacoes" class="container py-5 animate__animated animate__fadeIn">
         <h2 class="fw-bold text-center highlight">Certificações</h2>
         <div class="row align-items-center mt-4">
@@ -196,12 +229,13 @@
                     de ajudar a impulsionar seus negócios.</p>
                 <ul class="fs-4">
                     <li>Desenvolvimento de aplicativos mobile</li>
-                    <li>Desenvolvimento de sites e sistemas web (Local ou em Nuvem)</li>
+                    <li>Desenvolvimento de sites e sistemas web</li>
+                    <li>Design Gráfico</li>
                     <li>Consultoria de T.I</li>
                 </ul>
                 <p class="giacomellidevs text" id="text">
                     Entre em contato conosco e solicite um orçamento sem compromisso, estamos prontos para atendê-lo e
-                    ajudar a impulsionar o seu negócio..
+                    ajudar a impulsionar o seu negócio.
                 </p>
             </div>
             <div class="col-md-4">
@@ -229,7 +263,8 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2023 - 2025 Giacomelli Dev's. | Powered by <a href="https://giacomellidevs.netlify.app"
-                    style="color: #ff4500;">Giacomelli Dev's</a></p>
+                    style="color: #ff4500;">Giacomelli Dev's</a>
+            </p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -250,10 +285,11 @@
             });
         });
         AOS.init({
-            duration: 1100,
+            duration: 1300,
             once: true,
-        });
-
+        }); function abrirPopUp() {
+            document.getElementById("modal").classList.add("show");
+        }
     </script>
 
 </body>
